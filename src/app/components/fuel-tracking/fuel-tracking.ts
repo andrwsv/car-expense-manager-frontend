@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './fuel-tracking.html',
   styleUrl: './fuel-tracking.scss'
 })
-export class FuelTracking {
+export class FuelTrackingComponent {
 
 }

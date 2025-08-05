@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './reminders.html',
   styleUrl: './reminders.scss'
 })
-export class Reminders {
+export class RemindersComponent {
 
 }

@@ -1,1 +1,48 @@
-<p>navbar works!</p>
+<nav class="navbar">
+  <div class="navbar-container">
+    <div class="navbar-brand">
+      <h2>Car Expense Manager</h2>
+    </div>
+    
+    <div class="navbar-menu">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a routerLink="/dashboard" routerLinkActive="active" class="nav-link">
+            <i class="icon-dashboard"></i>
+            Dashboard
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/expenses" routerLinkActive="active" class="nav-link">
+            <i class="icon-expenses"></i>
+            Gastos
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/fuel-tracking" routerLinkActive="active" class="nav-link">
+            <i class="icon-fuel"></i>
+            Combustible
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/reminders" routerLinkActive="active" class="nav-link">
+            <i class="icon-reminders"></i>
+            Recordatorios
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navbar-user">
+      @if (currentUser) {
+        <div class="user-info">
+          <span class="user-name">{{ currentUser.name }}</span>
+          <button class="logout-btn" (click)="logout()">
+            <i class="icon-logout"></i>
+            Cerrar Sesión
+          </button>
+        </div>
+      }
+    </div>
+  </div>
+</nav>

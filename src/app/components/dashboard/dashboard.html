@@ -1,1 +1,62 @@
-<p>dashboard works!</p>
+<div class="dashboard">
+  <div class="dashboard-header">
+    <h1>Panel de Control</h1>
+    <p>Resumen de tus gastos de vehículo</p>
+  </div>
+
+  <div class="dashboard-stats">
+    <div class="stat-card">
+      <div class="stat-icon">💰</div>
+      <div class="stat-content">
+        <h3>Gastos del Mes</h3>
+        <p class="stat-value">$1,250.00</p>
+        <small>+12% vs mes anterior</small>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon">⛽</div>
+      <div class="stat-content">
+        <h3>Combustible</h3>
+        <p class="stat-value">$450.00</p>
+        <small>580 litros este mes</small>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon">🔧</div>
+      <div class="stat-content">
+        <h3>Mantenimiento</h3>
+        <p class="stat-value">$300.00</p>
+        <small>2 servicios realizados</small>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon">⏰</div>
+      <div class="stat-content">
+        <h3>Recordatorios</h3>
+        <p class="stat-value">3</p>
+        <small>Próximos vencimientos</small>
+      </div>
+    </div>
+  </div>
+
+  <div class="dashboard-actions">
+    <h2>Acciones Rápidas</h2>
+    <div class="action-buttons">
+      <button class="action-btn" routerLink="/expenses">
+        <span class="btn-icon">💰</span>
+        <span>Agregar Gasto</span>
+      </button>
+      <button class="action-btn" routerLink="/fuel-tracking">
+        <span class="btn-icon">⛽</span>
+        <span>Cargar Combustible</span>
+      </button>
+      <button class="action-btn" routerLink="/reminders">
+        <span class="btn-icon">⏰</span>
+        <span>Ver Recordatorios</span>
+      </button>
+    </div>
+  </div>
+</div>
